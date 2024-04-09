@@ -1,0 +1,79 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Web.Blazor.Client
+build_property.RootNamespace = Web.Blazor.Client
+build_property.ProjectDir = D:\ETL New Project(Bootstrap)\ETL API Convention\ETL.Convention.Solution\Web.Blazor\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ETL New Project(Bootstrap)\ETL API Convention\ETL.Convention.Solution\Web.Blazor\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/ExpenseCategories/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZUNhdGVnb3JpZXNcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/ExpenseCategories/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZUNhdGVnb3JpZXNcRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/ExpenseCategories/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZUNhdGVnb3JpZXNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/ExpenseCategories/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZUNhdGVnb3JpZXNcTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/Expenses/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZXNcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/Expenses/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZXNcRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/Expenses/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZXNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/Expenses/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZXNcTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Shared/LoadingIndicator.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvYWRpbmdJbmRpY2F0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-sr3rc10aav
+
+[D:/ETL New Project(Bootstrap)/ETL API Convention/ETL.Convention.Solution/Web.Blazor/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pcca97rmee

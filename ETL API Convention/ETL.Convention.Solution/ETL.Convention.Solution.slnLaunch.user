@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "API\\API.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "Web.Blazor\\Client\\Web.Blazor.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

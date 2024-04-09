@@ -1,0 +1,63 @@
+﻿@page "/expenses"
+@using Web.Blazor.Client.HttpServices
+@inject ExpenseHttpService expenseHttpService
+@inject NavigationManager navigationManager
+
+<div class="card list-card bg-primary text-white">
+    <div class="list-header">
+        <div class="list-card-header d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Expense Categories</h5>
+            <NavLink href="/expenses/create" class="btn btn-secondary btn-sm"><i class="bi bi-file-earmark-plus"></i> Create</NavLink>
+        </div>
+    </div>
+    <div class="card-body bg-white">
+        @if (expenseList is null)
+        {
+            <LoadingIndicator />
+        }
+        else
+        {
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>ExpenseCategory No</th>
+                        <th>ExpenseName</th>
+                        <th>Price</th>
+                        <th>Expense Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var e in expenseList)
+                    {
+                        <tr>
+                            <td>@e.ExpenseCategoryId</td>
+                            <td>@e.Description</td>
+                            <td>@e.Price</td>
+                            <td>@e.ExpenseDate.ToString(string.Format("dd-MM-yyyy"))</td>
+                            <td>
+                                <a class="btn btn-info" @onclick="@(() => navigationManager.NavigateTo($"/expenses/edit/{e.Oid}"))"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a class="btn btn-danger" @onclick="@(() => navigationManager.NavigateTo($"/expenses/delete/{e.Oid}"))"><i class="bi bi-trash3"></i> Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Expense> expenseList = new List<Expense>();
+    private List<ExpenseCategory> expenseCategoryList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetAllExpenses();
+        expenseCategoryList = await expenseHttpService.GetExpenseCategoriesAsync();
+    }
+    private async Task GetAllExpenses()
+    {
+        expenseList = await expenseHttpService.GetExpensesAsync();
+    }
+}

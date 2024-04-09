@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|d:\\etl new project(bootstrap)\\etl api convention\\etl.convention.solution\\web.blazor\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|solutionrelative:web.blazor\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|d:\\etl new project(bootstrap)\\etl api convention\\etl.convention.solution\\web.blazor\\client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|solutionrelative:web.blazor\\client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|d:\\etl new project(bootstrap)\\etl api convention\\etl.convention.solution\\web.blazor\\client\\pages\\expenses\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|solutionrelative:web.blazor\\client\\pages\\expenses\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|d:\\etl new project(bootstrap)\\etl api convention\\etl.convention.solution\\web.blazor\\client\\pages\\expenses\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA001BEF-A8BF-4873-A741-6626975BE7A9}|Web.Blazor\\Client\\Web.Blazor.Client.csproj|solutionrelative:web.blazor\\client\\pages\\expenses\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Web.Blazor\\Client\\Shared\\NavMenu.razor",
+              "ToolTip": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Web.Blazor\\Client\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T06:03:14.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "Web.Blazor\\Client\\_Imports.razor",
+              "ToolTip": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\_Imports.razor",
+              "RelativeToolTip": "Web.Blazor\\Client\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T06:03:10.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Pages\\Expenses\\Edit.razor",
+              "RelativeDocumentMoniker": "Web.Blazor\\Client\\Pages\\Expenses\\Edit.razor",
+              "ToolTip": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Pages\\Expenses\\Edit.razor",
+              "RelativeToolTip": "Web.Blazor\\Client\\Pages\\Expenses\\Edit.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T06:00:07.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.razor",
+              "DocumentMoniker": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Pages\\Expenses\\Create.razor",
+              "RelativeDocumentMoniker": "Web.Blazor\\Client\\Pages\\Expenses\\Create.razor",
+              "ToolTip": "D:\\ETL New Project(Bootstrap)\\ETL API Convention\\ETL.Convention.Solution\\Web.Blazor\\Client\\Pages\\Expenses\\Create.razor",
+              "RelativeToolTip": "Web.Blazor\\Client\\Pages\\Expenses\\Create.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T05:11:24.746Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

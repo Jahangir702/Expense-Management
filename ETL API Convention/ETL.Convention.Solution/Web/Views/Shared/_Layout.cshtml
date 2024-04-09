@@ -1,0 +1,65 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+  
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        .main {
+            min-height: calc(100vh - 110px);
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+        /*    .nav-link:hover {
+                            border-bottom: 2px solid #ff7240;
+                            color: #fff !important;
+                        }
+                */
+
+    </style>
+    @await RenderSectionAsync("styles", false)
+</head>
+<body>
+    <navbar class="navbar navbar-expand-md fixed-top shadow-sm pe-5 " style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,76,1) 44%, rgba(5,138,160,1) 68%, rgba(0,212,255,1) 100%); ">
+        <div class="container-fluid">
+            <span class="navbar-brand text-light" style=" font-family: cursive;">Excel<sup>Technology</sup></span>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nv" aria-controls="nv" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse" id="nv">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item active">
+                        @Html.ActionLink("Home", "Index", "Home", new { }, new { @class = "nav-link text-light" })
+                    </li>
+
+                    <li class="nav-item ">
+                        @Html.ActionLink("ExpenseCategories", "Index", "ExpenseCategories", new { }, new { @class = "nav-link text-light" })
+                    </li>
+
+                    <li class="nav-item ">
+                        @Html.ActionLink("Expenses", "Index", "Expenses", new { }, new { @class = "nav-link text-light" })
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+    <main class="container-fluid main">
+        @RenderBody()
+    </main>
+    <footer class="container-fluid">
+        &copy; 2024 Excel Technology | All rights reserved
+    </footer>
+    @RenderSection("scripts", false)
+</body>
+</html>

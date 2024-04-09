@@ -1,0 +1,91 @@
+﻿@model Domain.Entities.Expense
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row offset-2 CardOffset">
+    <div class="col-md-10 col-lg-10 col-sm-10 p-4 ClCard">
+
+        <!--ALERT MESSAGE-->
+        @if (TempData[Utilities.Constants.SessionConstants.Message] != null)
+        {
+            <div class="row g-3 me-0 ms-0 mt-1">
+                <div class="alert alert-warning" role="alert">
+                    @TempData[Utilities.Constants.SessionConstants.Message]
+                </div>
+            </div>
+        }
+
+        <div class="card">
+            <div class="card-body">
+
+                <!--HEADER-->
+                <div class="pagetitle">
+                    <h4 class="card-title fs-2 fw-bold mb-0">Expense</h4>
+                    <p class="mb-1" style="font-size:14px">Fields marked by <span class="text-danger">*</span> are mandatory</p>
+                    <hr class="mt-0">
+                </div>
+
+                <!--EXPENSE CATEGORY-->
+                <form class="row g-1" method="post" asp-action="Create" asp-controller="Expenses">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-floating mt-2">
+                            <input asp-for="Description" type="text" class="form-control" data-val="true" data-val-required="Required." data-val-length-max="90" data-val-length-min="2" data-val-length="Product should be atleast 2 digits." onkeypress="return IsAlphabat(event,this);">
+                        <label class="required" asp-for="Description">ExpenseName</label>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-floating mt-2">
+                            <select asp-for="ExpenseCategoryId" class="form-control" asp-items="@ViewBag.ExpenseCategories"><option>...</option></select>
+                            <label class="required" asp-for="ExpenseCategoryId">Expense Category</label>
+                            <span asp-validation-for="@Model.ExpenseCategoryId" class="text-danger" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-floating mt-2">
+                            <input asp-for="ExpenseDate" id="ExpenseDate" type="text" class="form-control form-control-sm date" data-val="true" data-val-required="Required.">
+                            <label class="required" asp-for="ExpenseDate">Expense Date</label>
+                            <span asp-validation-for="ExpenseDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-floating mt-2">
+                            <input asp-for="Price" type="number" class="form-control" onkeypress="return Isnumeric(event)" data-val="true" data-val-required="Required.">
+                            <label class="required" asp-for="Price">Price</label>
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!--ACTIONS-->
+                    <div class="col-md-12 col-sm-12 mt-0 mt-3 text-center">
+                        <button class="btn btn-primary mx-2" type="submit"><i class="bi bi-check2-circle"></i> Save</button>
+                        <a href="/Expenses/Index" class="btn btn-secondary"><i class="bi bi-x-circle"></i> Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section styles
+{
+    <link href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+
+}
+@section scripts
+{ 
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $(".date").datepicker({
+            // format: "yyyy-mm-dd"
+            format: "dd-mm-yyyy"
+        });
+    </script>
+}

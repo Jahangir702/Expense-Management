@@ -1,0 +1,60 @@
+﻿@page "/expensecategories"
+@using Web.Blazor.Client.HttpServices
+@inject ExpenseCategoryHttpService expenseCategoryHttpService
+@inject NavigationManager Navigation
+
+<div class="card list-card bg-primary text-white">
+    <div class="list-header">
+        <div class="list-card-header d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Expense Categories</h5>
+            <NavLink href="/expensecategories/create" class="btn btn-secondary btn-sm"><i class="bi bi-file-earmark-plus"></i> Create</NavLink>
+        </div>
+    </div>
+
+    <div class="card-body bg-white">
+        @if (expenseCategoryList is null)
+        {
+            <LoadingIndicator />
+        }
+        else
+        {
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>ExpenseCategory Name</th>
+                        <th>Is Available?</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var c in expenseCategoryList)
+                    {
+                        <tr>
+                            <td>@c.Description</td>
+                            <td>@c.Available</td>
+                            <td>
+                                <a class="btn btn-info" @onclick="@(() => Navigation.NavigateTo($"/expensecategories/edit/{c.Oid}"))"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a class="btn btn-danger" @onclick="@(() => Navigation.NavigateTo($"/expensecategories/delete/{c.Oid}"))"><i class="bi bi-trash3"></i> Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@code {
+    private List<ExpenseCategory> expenseCategoryList = new List<ExpenseCategory>();
+    private ExpenseCategory newExpenseCategory = new ExpenseCategory();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetAllExpenseCategories();
+    }
+
+    private async Task GetAllExpenseCategories()
+    {
+        expenseCategoryList = await expenseCategoryHttpService.GetExpenseCategoriesAsync();
+    }
+}

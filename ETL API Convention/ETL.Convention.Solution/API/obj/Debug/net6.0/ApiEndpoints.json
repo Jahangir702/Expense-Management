@@ -1,0 +1,160 @@
+[
+  {
+    "ContainingType": "API.Controllers.ExpenseController",
+    "Method": "CreateExpense",
+    "RelativePath": "expense-api/expense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "expense",
+        "Type": "Domain.Entities.Expense",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseController",
+    "Method": "UpdateProduct",
+    "RelativePath": "expense-api/expense/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "expense",
+        "Type": "Domain.Entities.Expense",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseController",
+    "Method": "DeleteExpense",
+    "RelativePath": "expense-api/expense/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseController",
+    "Method": "ReadExpenseByKey",
+    "RelativePath": "expense-api/expense/key/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseCategoryController",
+    "Method": "ReadExpenseCategories",
+    "RelativePath": "expense-api/expensecategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseCategoryController",
+    "Method": "CreateExpenseCategory",
+    "RelativePath": "expense-api/expensecategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "expenseCategory",
+        "Type": "Domain.Entities.ExpenseCategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseCategoryController",
+    "Method": "DeleteExpenseCategory",
+    "RelativePath": "expense-api/expensecategory/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseCategoryController",
+    "Method": "UpdateExpenseCategory",
+    "RelativePath": "expense-api/expensecategory/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "expenseCategory",
+        "Type": "Domain.Entities.ExpenseCategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseCategoryController",
+    "Method": "ReadExpenseCategoryByKey",
+    "RelativePath": "expense-api/expensecategory/key/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ExpenseController",
+    "Method": "ReadExpenses",
+    "RelativePath": "expense-api/expenses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,55 @@
+﻿@page "/expenses/delete/{key}"
+@using Web.Blazor.Client.HttpServices
+@inject ExpenseHttpService expenseHttpService
+@inject NavigationManager navigationManager
+<h3>Delete Expense</h3>
+
+@if (expense == null)
+{
+    <LoadingIndicator />
+}
+else
+{
+    <div class="alert alert-warning" role="alert">
+        <p>Are you sure you want to delete the Expense <strong>@expense.Description</strong>?</p>
+        <button class="btn btn-danger" @onclick="DeleteExpense">Delete</button>
+        <button class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </div>
+}
+
+@code {
+    private Expense expense;
+    private List<ExpenseCategory> expenseCategoryList;
+
+    [Parameter]
+    public string key { get; set; }
+
+    private List<ExpenseCategory> expenseCategories = new List<ExpenseCategory>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(key))
+        {
+            expense = await expenseHttpService.GetExpenseByIdAsync(int.Parse(key));
+        }
+        expenseCategoryList = await expenseHttpService.GetExpenseCategoriesAsync();
+    }
+
+    private async Task DeleteExpense()
+    {
+        try
+        {
+            await expenseHttpService.DeleteExpenseAsync(key);
+            navigationManager.NavigateTo("/expenses");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private void Cancel()
+    {
+        navigationManager.NavigateTo("/expenses");
+    }
+}
